@@ -115,18 +115,18 @@ window.dom = {
         return Array.from(node.parentNode.children).filter(n=>n!==node) //伪数组变成数组，然后过滤排除自己
     },
     next(node){ //获取弟弟
-        let a =node.nextSibling
-        while (a && a.nodeType ===3){ //剔除文本节点
-            a =a.nextSibling
+        let brother =node.nextSibling
+        while (brother && brother.nodeType ===3){ //剔除文本节点
+            brother =brother.nextSibling
         } 
-        return a
+        return brother
     },
     previous(node){ //获取哥哥
-        let b =node.previousSibling
-        while (b && b.nodeType ===3){ //剔除文本节点
-            b =b.previousSibling
+        let brother=node.previousSibling
+        while (brother && brother.nodeType ===3){ //剔除文本节点
+            brother =brother.previousSibling
         } 
-        return b
+        return brother
     },
     each(nodeList,fn){ //遍历所有节点
         for(let i=0; i<nodeList.length; i++){
