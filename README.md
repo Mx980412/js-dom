@@ -8,7 +8,7 @@
 
 ### 增
 
-- 创建节点：`dom.create(`<div>hi</div>`)`
+- 创建节点：`dom.create('<div>hi</div>')`
 - 新增弟弟：`dom.after(node, node2)`
 
 - 新增哥哥：`dom.before(node, node2)`
@@ -16,7 +16,7 @@
 
 - 新增爸爸：
 
-- - `dom.wrap(`<div></div>`)`
+- - `dom.wrap('<div></div>')`
   - `dom.wrap(node,parent)`
 
 ### 删
