@@ -35,18 +35,17 @@
   - 写：`dom.style(node, {color: 'red'})`
   - 修改：`dom.style(node,'color', 'red')` 
   - 读：`dom.style(div, 'color')`
-- 修改 class
+- 修改 class：
   - 添加：`dom.class.add(node, 'blue')`
   - 删除：`dom.class.remove(node, 'blue')`
   - 读：`dom.class.has(node, 'blue')`
-- 修改事件监听
+- 修改事件监听：
   - 添加：`dom.on(node, 'click', fn)`
   - 删除：`dom.off(node, 'click', fn)`
 
 ### 查
 
 - 获取标签或标签们：
-
   - 在document里：`dom.find('标签')`
   - 在选择器里：`dom.find(标签, '选择器')`
 - 获取父元素：`dom.parent(node)`
@@ -57,7 +56,8 @@
 - 遍历所有节点：`dom.each(nodes, fn)`
 - 获取排行老几：`dom.index(node)`
 
-## 设计模式
-
+# 设计模式
+## 重载
 1. 重载：支持多种参数
-2. 适配：针对不同浏览器使用不同代码
+## 适配
+1. 适配：针对不同浏览器使用不同代码
